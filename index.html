@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Judul halaman web -->
+    <title>Makanan Favoritku</title>
+
+    <!-- Icon situs web yang akan ditampilkan di tab browser -->
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+
+    <!-- Pautan ke file CSS untuk mempercantik tata letak dan gaya halaman -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Pautan ke file CSS ikon dari Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Memuat sumber daya praperakaman untuk font dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Pautan ke gaya huruf Poppins dari Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <!-- Tautan logo yang akan membawa kembali ke beranda (dalam hal ini, "#" menandakan beranda yang sama) -->
+      <a href="#" class="logo">Makanan Kesukaanku</a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <!-- Icon menu yang akan digunakan untuk membuka menu navigasi -->
+
+      <!-- Ini adalah daftar navigasi (navbar) -->
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reason">Reason</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-------home start------->
+    <section class="home" id="home"> <!-- Bagian home dengan judul, deskripsi, dan tombol untuk membaca selanjutnya -->
+      <div class="home-text">
+        <h1>Full Website</h1>
+        <h2>
+          Makan Adalah Part Favoritku <br />
+          Ini Beberapa Makanan Favoritku
+        </h2>
+        <a href="#about" class="btn"> Baca Selanjutnya </a>
+      </div>
+
+      <div class="home-img">
+        <img src="/mie_ayam.png" />
+      </div>
+    </section>
+
+    <!-------about start------->
+    <section class="about" id="about"> <!-- Bagian "about" atau bagian tentang halaman web -->
+      <div class="about-img">
+        <img src="/nasi padang.png" />
+      </div>
+
+      <div class="about-text">
+        <span>About</span>
+        <h2>
+          Makanan Favoritku<br />
+          Salah Satunya Adalah Nasi Padang
+        </h2>
+        <p>
+          Nasi Padang adalah hidangan khas Indonesia yang berasal dari daerah Sumatra Barat. Dihidangkan dengan porsi besar, hidangan ini terdiri dari nasi putih yang ditemani oleh berbagai jenis lauk pauk yang lezat. Dan lauk favoritku di
+          nasi padang adalah ayam gulai.
+        </p>
+        <a href="#menu" class="btn"> Baca Selanjutnya </a>
+      </div>
+    </section>
+
+    <!-------menu start------->
+    <section class="menu" id="menu"> <!-- Bagian "menu" atau bagian yang berisi daftar menu atau makanan -->
+      <div class="heading">
+        <span>Menu Makanan</span>
+        <h2>Ini Adalah Beberapa Menu Makanan Favoritku</h2>
+      </div>
+
+      <div class="menu-container">
+        <div class="box">
+          <div class="box-img">
+            <img src="/nasi padang.png" width="300px" />
+          </div>
+          <h2>Nasi Padang</h2>
+          <h3>Tasty Food</h3>
+          <span>Rp.10.000</span>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="/bakso.png" width="300px" />
+          </div>
+          <h2>Bakso Daging</h2>
+          <h3>Tasty Food</h3>
+          <span>Rp.12.000</span>
+        </div>
+
+        <div class="box">
+          <div class="box-img">
+            <img src="about mie ayam2.png" />
+          </div>
+          <h2>Mie Ayam</h2>
+          <h3>Tasty Food</h3>
+          <span>Rp.10.000</span>
+        </div>
+      </div>
+    </section>
+
+    <!-------reason start------->
+    <section class="reason" id="reason"> <!-- Bagian "reason" atau bagian yang berisi alasan -->
+      <div class="heading">
+        <h2>Alasanku Menyukai Makanan Diatas</h2>
+      </div>
+
+      <div class="reason-container">
+        <div class="s-box">
+          <h3>1. Nasi Padang</h3>
+          <p>
+            Dari semua makanan yang aku suka, aku paling suka dengan nasi padang. Alasanku menyukai nasi padang itu adalah karena nasi padang terkenal mempunyai beragam rasa yang kuat dan kompleks. Dari pedas, gurih, asam, hingga manis,
+            semuanya dapat ditemukan dalam satu hidangan.
+          </p>
+        </div>
+
+        <div class="s-box">
+          <h3>2. Bakso</h3>
+          <p>
+            Alasanku menyukai bakso adalah karena bakso bisa ditemukan di banyak tempat, mulai dari gerobak pinggir jalan hingga restoran mewah. Selain itu, karena harganya yang relatif murah juga membuatku sangat tertarik dengan bakso.
+          </p>
+        </div>
+
+        <div class="s-box">
+          <h3>3. Mie Ayam</h3>
+          <p>
+            Alasanku menyukai mie ayam adalah karena mie ayam sangat enak jika dimakan saat sedang hujan atau dingin sama seperti bakso yang enak jika dimakan saat sedang hujan. Tapi, jika disuruh pilih salah satu antara bakso dan mie ayam,
+            aku akan lebih memilih mie ayam. Karena aku lebih menyukai mie ayam dibandingkan bakso walaupun bakso juga menjadi salah satu makanan favoritku.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------call to action------->
+    <section class="cta">
+      <h2>
+        Makanan Favoritku Enak Enak Loh <br />
+        Kalian Jangan Lupa Coba Juga Yaaa!!!
+      </h2>
+    </section>
+
+    <!-------call to action------->
+    <section id="contact">
+      <div class="footer">
+        <div class="main">
+          <div class="col">
+            <h4>Menu Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#reason">Reason</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col">
+            <h4>Contact</h4>
+            <div class="social">
+              <a href="https://instagram.com/dipaa.slsbla?igshid=NjIwNzIyMDk2Mg=="><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.tiktok.com/@dipaadeh?_t=8fWO9LeqdGM&_r=1"><i class="bx bxl-tiktok"></i></a>
+              <a href="#"><i class="bx bxl-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

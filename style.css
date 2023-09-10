@@ -1,0 +1,318 @@
+* {
+  /* Gaya dasar untuk semua elemen HTML (*) */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /* Definisi variabel kustom untuk gaya utama */
+  --main-color: #ff702a;
+  --text-color: #fff;
+  --bg-color: #1e1c2a;
+  --big-font: 5rem;
+  --h2-font: 2.25rem;
+  --p-font: 0.9rem;
+}
+*::selection {
+  /* Gaya seleksi teks */
+  background: var(--main-color);
+  color: #fff;
+}
+body {
+  /* Gaya umum untuk elemen body */
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+header {
+  /* Gaya untuk elemen header */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 170px;
+  background: var(--bg-color);
+}
+.logo {
+  /* Gaya untuk elemen dengan kelas "logo" */
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 2.4rem;
+}
+.navbar {
+  /* Gaya untuk elemen dengan kelas "navbar" */
+  display: flex;
+}
+.navbar a {
+  /* Gaya untuk tautan dalam elemen dengan kelas "navbar" */
+  color: var(--text-color);
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+.navbar a:hover {
+  /* Gaya saat tautan dalam elemen dengan kelas "navbar" diarahkan */
+  color: var(--main-color);
+  transition: 4s;
+}
+#menu-icon {
+  /* Gaya untuk elemen dengan ID "menu-icon" */
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+section {
+  /* Gaya umum untuk elemen "section" */
+  padding: 70px 17%;
+}
+.home {
+  /* Gaya untuk elemen dengan kelas "home" */
+  width: 100%;
+  min-height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+.home-img img {
+  /* Gaya untuk gambar di dalam elemen dengan kelas "home-img" di dalam elemen dengan kelas "home" */
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+.home-text h1 {
+  /* Gaya untuk elemen h1 di dalam elemen dengan kelas "home-text" di dalam elemen dengan kelas "home" */
+  font-size: 300;
+  color: var(--main-color);
+}
+.home-text h2 {
+  /* Gaya untuk elemen h2 di dalam elemen dengan kelas "home-text" di dalam elemen dengan kelas "home" */
+  font-size: var(--h2-font);
+  margin: 1rem 0 2rem;
+}
+.btn {
+  /* Definisikan kelas CSS .btn */
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.btn:hover {
+  /* Atur animasi untuk saat kursor berada di atas elemen dengan kelas .btn */
+  transform: scale(1.2) translateY(10px);
+  transition: 4s;
+}
+.about {
+  /* Gaya untuk kelas CSS .about */
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1 5rem;
+  align-items: center;
+}
+.about-img img {
+  /* Gaya untuk gambar di dalam elemen dengan kelas CSS .about-img */
+  max-width: 100%;
+  width: 480px;
+  height: auto;
+}
+.about-text span {
+  /* Gaya untuk elemen span di dalam elemen dengan kelas CSS .about-text */
+  color: var(--main-color);
+  font-weight: 600;
+}
+.about-text h2 {
+  /* Gaya untuk elemen h2 di dalam elemen dengan kelas CSS .about-text */
+  font-size: var(--h2-font);
+}
+.about-text p {
+  /* Gaya untuk elemen paragraf di dalam elemen dengan kelas CSS .about-text */
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7;
+}
+.heading {
+  /* Gaya untuk elemen dengan kelas CSS .heading */
+  text-align: center;
+}
+.heading span {
+  /* Gaya untuk elemen span di dalam elemen dengan kelas CSS .heading */
+  color: var(--main-color);
+  font-weight: 600;
+}
+.heading h2 {
+  /* Gaya untuk elemen h2 di dalam elemen dengan kelas CSS .heading */
+  font-size: var(--h2-font);
+}
+.menu-container {
+  /* Gaya untuk elemen dengan kelas CSS .menu-container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+.box {
+  /* Gaya untuk elemen dengan kelas CSS .box */
+  position: relative;
+  margin-top: 4rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #feeee7;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+.box-img {
+  /* Gaya untuk elemen dengan kelas CSS .box-img */
+  height: 220px;
+  width: 220px;
+}
+.box-img img {
+  /* Gaya untuk gambar di dalam elemen dengan kelas CSS .box-img */
+  width: 100%;
+  height: 100%;
+}
+.box h2 {
+  /* Gaya untuk elemen h2 di dalam elemen dengan kelas CSS .box */
+  font-size: 1.3rem;
+  color: var(--bg-color);
+}
+.box h3 {
+  /* Gaya untuk elemen h3 di dalam elemen dengan kelas CSS .box */
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 4px 0 10px;
+}
+.box span {
+  /* Gaya untuk elemen span di dalam elemen dengan kelas CSS .box */
+  font-size: var(--p-font);
+  color: var(--main-color);
+  font-weight: 600;
+}
+.box .bx {
+  /* Gaya untuk elemen dengan kelas CSS .bx di dalam elemen dengan kelas CSS .box */
+  background: var(--main-color);
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+}
+.reason-container {
+  /* Gaya untuk elemen dengan kelas CSS .reason-container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  grid-gap: 1.5rem;
+  margin-top: 4rem;
+}
+.s-box {
+  /* Gaya untuk elemen dengan kelas CSS .s-box */
+  text-align: center;
+  padding: 20px 30px;
+}
+.s-box h3 {
+  /* Gaya untuk elemen h3 di dalam elemen dengan kelas CSS .s-box */
+  margin: 4px 0 10px;
+  color: var(--main-color);
+  font-size: 1.2rem;
+}
+.s-box p {
+  /* Gaya untuk elemen paragraf di dalam elemen dengan kelas CSS .s-box */
+  line-height: 1.7;
+}
+.cta {
+  /* Gaya untuk elemen dengan kelas CSS .cta */
+  background: #feeee7;
+  padding: 70px 0;
+  text-align: center;
+  width: 66%;
+  margin: 100px auto;
+  border-radius: 10px;
+}
+.cta h2 {
+  /* Gaya untuk elemen h2 di dalam elemen dengan kelas CSS .cta */
+  font-size: 2rem;
+  color: var(--bg-color);
+  margin-bottom: 30px;
+}
+.main {
+  /* Gaya untuk elemen dengan kelas CSS .main */
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer {
+  /* Gaya untuk elemen dengan kelas CSS .footer */
+  padding: 10px 0;
+}
+.col {
+  /* Gaya untuk elemen dengan kelas CSS .col */
+  width: 25%;
+}
+.col h4 {
+  /* Gaya untuk elemen h4 di dalam elemen dengan kelas CSS .col */
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  position: relative;
+}
+.col h4::before {
+  /* Gaya untuk pseudo elemen ::before di dalam elemen h4 yang berada di dalam elemen dengan kelas CSS .col */
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50px;
+  left: 0;
+  bottom: -8px;
+  background: var(--main-color);
+}
+.col ul li:not(:last-child) {
+  /* Gaya untuk elemen daftar (list item) kecuali yang terakhir di dalam elemen "col" */
+  margin-bottom: 15px;
+}
+.col ul li a {
+  /* Gaya untuk tautan dalam elemen daftar (list item) di dalam elemen "col" */
+  color: #9897a9;
+  font-size: 1.1rem;
+  display: block;
+  text-transform: capitalize;
+  transition: 2s;
+}
+.col ul li a:hover {
+  /* Gaya saat tautan dalam elemen daftar (list item) di dalam elemen "col" diarahkan */
+  color: var(--text-color);
+  transform: translateX(-12px);
+}
+.col .social {
+  /* Gaya untuk elemen dengan kelas "social" di dalam elemen dengan kelas "col" */
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.col .social a {
+  /* Gaya untuk tautan sosial di dalam elemen dengan kelas "col" */
+  height: 40px;
+  width: 40px;
+  background: var(--main-color);
+  color: var(--text-color);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: 2s;
+}
+.col .social a:hover {
+  /* Gaya saat tautan sosial diarahkan */
+  transform: scale(1.2);
+  color: var(--bg-color);
+  background: var();
+}
